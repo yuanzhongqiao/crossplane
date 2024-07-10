@@ -1,138 +1,96 @@
-[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/3260/badge)](https://www.bestpractices.dev/projects/3260) ![CI](https://github.com/crossplane/crossplane/workflows/CI/badge.svg) [![Go Report Card](https://goreportcard.com/badge/github.com/crossplane/crossplane)](https://goreportcard.com/report/github.com/crossplane/crossplane)
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><p dir="auto"><a href="https://www.bestpractices.dev/projects/3260" rel="nofollow"><img src="https://camo.githubusercontent.com/f24a46674c78ae0574a7abc4c1bcb24225bd73b5710e1017cd2b126977938017/68747470733a2f2f7777772e626573747072616374696365732e6465762f70726f6a656374732f333236302f6261646765" alt="OpenSSF 最佳实践" data-canonical-src="https://www.bestpractices.dev/projects/3260/badge" style="max-width: 100%;"></a> <a target="_blank" rel="noopener noreferrer" href="https://github.com/crossplane/crossplane/workflows/CI/badge.svg"><img src="https://github.com/crossplane/crossplane/workflows/CI/badge.svg" alt="CI" style="max-width: 100%;"></a> <a href="https://goreportcard.com/report/github.com/crossplane/crossplane" rel="nofollow"><img src="https://camo.githubusercontent.com/871805064d27232e2a0dd0210a4c9a42024b2fd94102f59616f18e2df1723799/68747470733a2f2f676f7265706f7274636172642e636f6d2f62616467652f6769746875622e636f6d2f63726f7373706c616e652f63726f7373706c616e65" alt="围棋成绩单" data-canonical-src="https://goreportcard.com/badge/github.com/crossplane/crossplane" style="max-width: 100%;"></a></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/crossplane/crossplane/blob/master/banner.png"><img src="/crossplane/crossplane/raw/master/banner.png" alt="横平面" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Crossplane 是一个无需编写代码即可构建云原生控制平面的框架。它具有高度可扩展的后端，可让您构建一个控制平面，无论应用程序和基础架构在何处运行，它都能够对其进行编排；它还具有高度可配置的前端，可让您控制其提供的声明式 API 的架构。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Crossplane 是</font></font><a href="https://www.cncf.io/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">云原生计算基金会的</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一个项目。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">立即开始</font></font></h2><a id="user-content-get-started" class="anchor" aria-label="永久链接：开始" href="#get-started"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Crossplane 的</font></font><a href="https://docs.crossplane.io/latest/getting-started/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">涵盖安装和云提供商快速入门。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发行</font></font></h2><a id="user-content-releases" class="anchor" aria-label="固定链接：发布" href="#releases"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://github.com/crossplane/crossplane/releases"><img src="https://camo.githubusercontent.com/f3d6c37250b8ceb7a5fb9b33aa8bfaa1fb2e7abb6f8e15a0e4c517d3f9912cab/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f72656c656173652f63726f7373706c616e652f63726f7373706c616e652f616c6c2e737667" alt="GitHub 发布" data-canonical-src="https://img.shields.io/github/release/crossplane/crossplane/all.svg" style="max-width: 100%;"></a> <a href="https://artifacthub.io/packages/helm/crossplane/crossplane" rel="nofollow"><img src="https://camo.githubusercontent.com/dcabdc79adeb5a3e59ca3b802824a94e435d620c3fc544c8e1f5ee2c0ed7281f/68747470733a2f2f696d672e736869656c64732e696f2f656e64706f696e743f75726c3d68747470733a2f2f61727469666163746875622e696f2f62616467652f7265706f7369746f72792f63726f7373706c616e65" alt="神器中心" data-canonical-src="https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/crossplane" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">当前维护的版本以及即将发布的几个版本如下所列。有关更多信息，请参阅 Crossplane</font></font><a href="https://docs.crossplane.io/knowledge-base/guides/release-cycle" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发布周期文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<markdown-accessiblity-table data-catalyst=""><table>
+<thead>
+<tr>
+<th align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发布</font></font></th>
+<th align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发布日期</font></font></th>
+<th align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">停产</font></font></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">v1.14</font></font></td>
+<td align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2023 年 11 月 1 日</font></font></td>
+<td align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2024 年 8 月</font></font></td>
+</tr>
+<tr>
+<td align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">v1.15</font></font></td>
+<td align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2024 年 2 月 15 日</font></font></td>
+<td align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2024 年 11 月</font></font></td>
+</tr>
+<tr>
+<td align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">v1.16</font></font></td>
+<td align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2024 年 5 月 15 日</font></font></td>
+<td align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2025 年 2 月</font></font></td>
+</tr>
+<tr>
+<td align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">v1.17</font></font></td>
+<td align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">'24年8月初</font></font></td>
+<td align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2025 年 5 月</font></font></td>
+</tr>
+<tr>
+<td align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">v1.18</font></font></td>
+<td align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">'24年11月初</font></font></td>
+<td align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2025 年 8 月</font></font></td>
+</tr>
+<tr>
+<td align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">v1.19</font></font></td>
+<td align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">'25年2月初</font></font></td>
+<td align="center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2025 年 11 月</font></font></td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以订阅</font></font><a href="https://calendar.google.com/calendar/embed?src=c_2cdn0hs9e2m05rrv1233cjoj1k%40group.calendar.google.com" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社区日历来跟踪所有发布日期，并在</font></font></a><font style="vertical-align: inherit;"></font><a href="https://github.com/crossplane/crossplane/releases"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发布</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页面上找到最新发布</font><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">路线图</font></font></h2><a id="user-content-roadmap" class="anchor" aria-label="永久链接：路线图" href="#roadmap"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Crossplane 的公共路线图已作为 GitHub 项目板发布。添加到路线图的问题已进行分类并被确定为对社区有价值，因此是我们预期投资的项目的优先事项。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">路线图中任何问题的里程碑都旨在让人们了解总体优先级和预期交付顺序。它们应被视为近似估计，而不是</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">特定交付时间表的严格承诺。</font></font></p>
+<p dir="auto"><a href="https://github.com/orgs/crossplane/projects/20/views/9?pane=info"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">跨平面路线图</font></font></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">参与其中</font></font></h2><a id="user-content-get-involved" class="anchor" aria-label="永久链接：参与其中" href="#get-involved"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://slack.crossplane.io" rel="nofollow"><img src="https://camo.githubusercontent.com/a9c6009186633e76687e0d94a701ff59197dec222b6c3f382f2dbd3f110ee292/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f736c61636b2d63726f7373706c616e652d7265643f6c6f676f3d736c61636b" alt="松弛" data-canonical-src="https://img.shields.io/badge/slack-crossplane-red?logo=slack" style="max-width: 100%;"></a> <a href="https://twitter.com/intent/follow?screen_name=crossplane_io&amp;user_id=788180534543339520" rel="nofollow"><img src="https://camo.githubusercontent.com/9dcb595cde13c160917698eeb29c7dbdbbe55ffb849f1f399cfa307aae31750d/68747470733a2f2f696d672e736869656c64732e696f2f747769747465722f666f6c6c6f772f63726f7373706c616e655f696f3f6c6f676f3d58266c6162656c3d466f6c6c6f77267374796c653d666c6174" alt="Twitter 关注" data-canonical-src="https://img.shields.io/twitter/follow/crossplane_io?logo=X&amp;label=Follow&amp;style=flat" style="max-width: 100%;"></a> <a href="https://www.youtube.com/@Crossplane" rel="nofollow"><img src="https://camo.githubusercontent.com/2382a3f5625714d536288970c6de0df53b415c3e538a8d0544598cf4dec74a37/68747470733a2f2f696d672e736869656c64732e696f2f796f75747562652f6368616e6e656c2f73756273637269626572732f5543313946677a4d424d7142726f33363148624534364677" alt="YouTube 频道订阅者" data-canonical-src="https://img.shields.io/youtube/channel/subscribers/UC19FgzMBMqBro361HbE46Fw" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Crossplane 是一个社区驱动的项目；我们欢迎您做出贡献。要提交错误、提出改进建议或请求新功能，请</font></font><a href="https://github.com/crossplane/crossplane/issues"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">向 Crossplane</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或相关提供商提出问题。请参阅我们的</font></font><a href="/crossplane/crossplane/blob/master/contributing/README.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献指南</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+，了解有关如何提供帮助的更多信息。</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"></font><a href="https://slack.crossplane.io" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在Slack</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或我们的</font></font><a href="https://groups.google.com/forum/#!forum/crossplane-dev" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开发者邮件列表</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上讨论 Crossplane </font><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"></font><a href="https://twitter.com/crossplane_io" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在Twitter</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><a href="https://www.linkedin.com/company/crossplane/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LinkedIn</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上关注我们</font><font style="vertical-align: inherit;">，或订阅我们的</font></font><a href="https://eepurl.com/ivy4v-/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">时事通讯</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"></font><a href="mailto:info@crossplane.io"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过电子邮件</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">联系我们</font><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加入我们的定期社区会议。</font></font></li>
+<li><font style="vertical-align: inherit;"></font><a href="https://github.com/orgs/crossplane/projects/20/views/9?pane=info"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对我们的路线图和发布板</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提供反馈</font><font style="vertical-align: inherit;">。</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://www.thetimezoneconverter.com/?t=10:00&amp;tz=PT%20%28Pacific%20Time%29" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Crossplane 社区会议每 4 周星期四太平洋时间上午 10:00</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">举行一次。您可以在</font></font><a href="https://calendar.google.com/calendar/embed?src=c_2cdn0hs9e2m05rrv1233cjoj1k%40group.calendar.google.com" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社区日历</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上找到最新的会议日程安排</font><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">鼓励任何想要讨论项目方向、设计和实施评审，或向更广泛的社区提出一般性问题的人加入。</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">会议链接：</font></font><a href="https://zoom.us/j/425148449?pwd=NEk4N0tHWGpEazhuam1yR28yWHY5QT09" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://zoom.us/j/425148449?pwd= NEk4N0tHWGpEazhuam1yR28yWHY5QT09</font></font></a></li>
+<li><a href="https://docs.google.com/document/d/1q_sp2jLQsDEOX7Yug6TPOv7Fwrys6EwcF5Itxjkno7Y/edit?usp=sharing" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">当前议程和过去的会议记录</font></font></a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL510POnNVaaYYYDSICFSNWFqNbx1EMr-M" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">过去的会议记录</font></font></a></li>
+<li><a href="https://calendar.google.com/calendar/embed?src=c_2cdn0hs9e2m05rrv1233cjoj1k%40group.calendar.google.com" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社区日历</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">特别兴趣小组 (SIG)</font></font></h3><a id="user-content-special-interest-groups-sig" class="anchor" aria-label="永久链接：特别兴趣小组 (SIG)" href="#special-interest-groups-sig"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://calendar.google.com/calendar/embed?src=c_2cdn0hs9e2m05rrv1233cjoj1k%40group.calendar.google.com" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">每个 SIG 都在 Slack 上协作，并且一些小组会定期举行会议，您可以在社区日历</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中找到会议</font><font style="vertical-align: inherit;">。</font></font></p>
+<ul dir="auto">
+<li><a href="https://crossplane.slack.com/archives/C05BP6QFLUW" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">#sig-composition-environments</font></font></a></li>
+<li><a href="https://crossplane.slack.com/archives/C031Y29CSAE" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">#sig-composition-函数</font></font></a></li>
+<li><a href="https://crossplane.slack.com/archives/C05BP8W5ALW" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">#sig-删除排序</font></font></a></li>
+<li><a href="https://crossplane.slack.com/archives/C05U1LLM3B2" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">#sig-devex</font></font></a></li>
+<li><a href="https://crossplane.slack.com/archives/C02CAQ52DPU" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">#sig 文档</font></font></a></li>
+<li><a href="https://crossplane.slack.com/archives/C05C8CCTVNV" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">#sig-e2e 测试</font></font></a></li>
+<li><a href="https://crossplane.slack.com/archives/C061GNH3LA0" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">#sig-可观察性</font></font></a></li>
+<li><a href="https://crossplane.slack.com/archives/C04D5988QEA" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">#sig-observe-only</font></font></a></li>
+<li><a href="https://crossplane.slack.com/archives/C056YAQRV16" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">#sig-提供者家庭</font></font></a></li>
+<li><a href="https://crossplane.slack.com/archives/C05BY7DKFV2" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">#sig-秘密商店</font></font></a></li>
+<li><a href="https://crossplane.slack.com/archives/C05T19TB729" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">#sig-upjet</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">采用者</font></font></h2><a id="user-content-adopters" class="anchor" aria-label="永久链接：采用者" href="#adopters"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Crossplane 项目的公开用户列表可在</font></font><a href="/crossplane/crossplane/blob/master/ADOPTERS.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ADOPTERS.md</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中找到。我们鼓励 Crossplane 的所有用户将自己添加到此列表中 - 我们希望看到社区取得越来越大的成功！</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">执照</font></font></h2><a id="user-content-license" class="anchor" aria-label="永久链接：许可证" href="#license"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Crossplane 遵循 Apache 2.0 许可。</font></font></p>
+<p dir="auto"><a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fcrossplane%2Fcrossplane?ref=badge_large" rel="nofollow"><img src="https://camo.githubusercontent.com/578c122939958ef953a721cb2fc32be1b90068cbb64c8b42b7ed0e052a2f58e4/68747470733a2f2f6170702e666f7373612e696f2f6170692f70726f6a656374732f6769742532426769746875622e636f6d25324663726f7373706c616e6525324663726f7373706c616e652e7376673f747970653d6c61726765" alt="FOSSA 状态" data-canonical-src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcrossplane%2Fcrossplane.svg?type=large" style="max-width: 100%;"></a></p>
 
-![Crossplane](banner.png)
-
-Crossplane is a framework for building cloud native control planes without
-needing to write code. It has a highly extensible backend that enables you to
-build a control plane that can orchestrate applications and infrastructure no
-matter where they run, and a highly configurable frontend that puts you in
-control of the schema of the declarative API it offers.
-
-Crossplane is a [Cloud Native Computing Foundation][cncf] project.
-
-## Get Started
-
-Crossplane's [Get Started Docs] cover install and cloud provider quickstarts.
-
-## Releases
-
-[![GitHub release](https://img.shields.io/github/release/crossplane/crossplane/all.svg)](https://github.com/crossplane/crossplane/releases) [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/crossplane)](https://artifacthub.io/packages/helm/crossplane/crossplane)
-
-Currently maintained releases, as well as the next few upcoming releases are
-listed below. For more information take a look at the Crossplane [release cycle
-documentation].
-
-| Release | Release Date  |   EOL    |
-|:-------:|:-------------:|:--------:|
-|  v1.14  | Nov 1, 2023   | Aug 2024 |
-|  v1.15  | Feb 15, 2024  | Nov 2024 |
-|  v1.16  | May 15, 2024  | Feb 2025 |
-|  v1.17  | Early Aug '24 | May 2025 |
-|  v1.18  | Early Nov '24 | Aug 2025 |
-|  v1.19  | Early Feb '25 | Nov 2025 |
-
-You can subscribe to the [community calendar] to track all release dates, and
-find the most recent releases on the [releases] page.
-
-## Roadmap
-
-The public roadmap for Crossplane is published as a GitHub project board. Issues
-added to the roadmap have been triaged and identified as valuable to the
-community, and therefore a priority for the project that we expect to invest in.
-
-Milestones assigned to any issues in the roadmap are intended to give a sense of
-overall priority and the expected order of delivery. They should be considered
-approximate estimations and are **not** a strict commitment to a specific
-delivery timeline.
-
-[Crossplane Roadmap]
-
-## Get Involved
-
-[![Slack](https://img.shields.io/badge/slack-crossplane-red?logo=slack)](https://slack.crossplane.io) [![Twitter Follow](https://img.shields.io/twitter/follow/crossplane_io?logo=X&label=Follow&style=flat)](https://twitter.com/intent/follow?screen_name=crossplane_io&user_id=788180534543339520) [![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UC19FgzMBMqBro361HbE46Fw)](https://www.youtube.com/@Crossplane)
-
-Crossplane is a community driven project; we welcome your contribution. To file
-a bug, suggest an improvement, or request a new feature please open an [issue
-against Crossplane] or the relevant provider. Refer to our [contributing guide]
-for more information on how you can help.
-
-* Discuss Crossplane on [Slack] or our [developer mailing list].
-* Follow us on [Twitter] or [LinkedIn], or subscribe to our [newsletter].
-* Contact us via [Email].
-* Join our regular community meetings.
-* Provide feedback on our [roadmap and releases board].
-
-The Crossplane community meeting takes place every 4 weeks on [Thursday at
-10:00am Pacific Time][community meeting time]. You can find the up to date
-meeting schedule on the [Community Calendar][community calendar].
-
-Anyone who wants to discuss the direction of the project, design and
-implementation reviews, or raise general questions with the broader community is
-encouraged to join.
-
-* Meeting link: <https://zoom.us/j/425148449?pwd=NEk4N0tHWGpEazhuam1yR28yWHY5QT09>
-* [Current agenda and past meeting notes]
-* [Past meeting recordings]
-* [Community Calendar][community calendar]
-
-### Special Interest Groups (SIG)
-Each SIG collaborates in Slack and some groups have regular meetings, you can
-find the meetings in the [Community Calendar][community calendar].
-- [#sig-composition-environments][sig-composition-environments-slack]
-- [#sig-composition-functions][sig-composition-functions-slack]
-- [#sig-deletion-ordering][sig-deletion-ordering-slack]
-- [#sig-devex][sig-devex-slack]
-- [#sig-docs][sig-docs-slack]
-- [#sig-e2e-testing][sig-e2e-testing-slack]
-- [#sig-observability][sig-observability-slack]
-- [#sig-observe-only][sig-observe-only-slack]
-- [#sig-provider-families][sig-provider-families-slack]
-- [#sig-secret-stores][sig-secret-stores-slack]
-- [#sig-upjet][sig-upjet-slack]
-
-## Adopters
-
-A list of publicly known users of the Crossplane project can be found in [ADOPTERS.md].  We
-encourage all users of Crossplane to add themselves to this list - we want to see the community's
-growing success!
-
-## License
-
-Crossplane is under the Apache 2.0 license.
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcrossplane%2Fcrossplane.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcrossplane%2Fcrossplane?ref=badge_large)
-
-<!-- Named links -->
-
-[Crossplane]: https://crossplane.io
-[release cycle documentation]: https://docs.crossplane.io/knowledge-base/guides/release-cycle
-[install]: https://crossplane.io/docs/latest
-[Slack]: https://slack.crossplane.io
-[developer mailing list]: https://groups.google.com/forum/#!forum/crossplane-dev
-[Twitter]: https://twitter.com/crossplane_io
-[LinkedIn]: https://www.linkedin.com/company/crossplane/
-[newsletter]: https://eepurl.com/ivy4v-/
-[Email]: mailto:info@crossplane.io
-[issue against Crossplane]: https://github.com/crossplane/crossplane/issues
-[contributing guide]: contributing/README.md
-[community meeting time]: https://www.thetimezoneconverter.com/?t=10:00&tz=PT%20%28Pacific%20Time%29
-[Current agenda and past meeting notes]: https://docs.google.com/document/d/1q_sp2jLQsDEOX7Yug6TPOv7Fwrys6EwcF5Itxjkno7Y/edit?usp=sharing
-[Past meeting recordings]: https://www.youtube.com/playlist?list=PL510POnNVaaYYYDSICFSNWFqNbx1EMr-M
-[roadmap and releases board]: https://github.com/orgs/crossplane/projects/20/views/9?pane=info
-[cncf]: https://www.cncf.io/
-[Get Started Docs]: https://docs.crossplane.io/latest/getting-started/
-[community calendar]: https://calendar.google.com/calendar/embed?src=c_2cdn0hs9e2m05rrv1233cjoj1k%40group.calendar.google.com
-[releases]: https://github.com/crossplane/crossplane/releases
-[ADOPTERS.md]: ADOPTERS.md
-[Crossplane Roadmap]: https://github.com/orgs/crossplane/projects/20/views/9?pane=info
-[sig-composition-environments-slack]: https://crossplane.slack.com/archives/C05BP6QFLUW
-[sig-composition-functions-slack]: https://crossplane.slack.com/archives/C031Y29CSAE
-[sig-deletion-ordering-slack]: https://crossplane.slack.com/archives/C05BP8W5ALW
-[sig-devex-slack]: https://crossplane.slack.com/archives/C05U1LLM3B2
-[sig-docs-slack]: https://crossplane.slack.com/archives/C02CAQ52DPU
-[sig-e2e-testing-slack]: https://crossplane.slack.com/archives/C05C8CCTVNV
-[sig-observability-slack]: https://crossplane.slack.com/archives/C061GNH3LA0
-[sig-observe-only-slack]: https://crossplane.slack.com/archives/C04D5988QEA
-[sig-provider-families-slack]: https://crossplane.slack.com/archives/C056YAQRV16
-[sig-secret-stores-slack]: https://crossplane.slack.com/archives/C05BY7DKFV2
-[sig-upjet-slack]: https://crossplane.slack.com/archives/C05T19TB729
+</article></div>
